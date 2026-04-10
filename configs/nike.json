@@ -1,0 +1,22 @@
+{
+    "container": {"tag": "div", "class": ["product-card__info disable-animations for--product", "product-card__info disable-animations"]},
+    "image_container": {"tag": "img", "class": "product-card__hero-image css-ocqh9"},
+    "fields": {
+        "clothing": [
+            {"tag": "div", "class": "product_msg_info"},
+            {"tag": "div", "class": "product-card__titles"},
+            {"tag": "div", "class": "product-card__subtitle", "action": "text"}
+        ],
+        "price": [
+            {"tag": "div", "class": "product-card__animation_wrapper"},
+            {"tag": "div", "class": "product-card__price-wrapper"},
+            {"tag": "div", "class": "product-card__price"},
+            {"tag": "div", "class": "css-1pl6es8"},
+            {"tag": "div", "class": "product-price__wrapper css-e01723"},
+            {"tag": "div", "class": "product-price au__styling is--current-price css-196r7ux", "action": "text"}
+        ],
+        "image": [
+            {"action": "get", "attr": "src"}
+        ]
+    }
+}

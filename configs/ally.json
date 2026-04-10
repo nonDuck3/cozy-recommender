@@ -1,0 +1,20 @@
+{
+    "container": {"tag": "div", "class": "pl-[6px] lg:pl-[10px]"},
+    "image_container": {"tag": "a", "class": "relative collectionimgs"},
+    "fields": {
+        "clothing": [
+            {"tag": "div", "class": "flex mt-[10px]"},
+            {"tag": "div", "class": "flex-1"},
+            {"tag": "a", "class": "hover:underline", "action": "get", "attr": "title"}
+        ],
+        "price": [
+            {"tag": "div", "class": "flex items-center flex-wrap"},
+            {"tag": "div", "class": ["price tracking-tight flex text-sm", "price tracking-tight flex text-sm price--sale"]},
+            {"tag": "span", "class": "flex"},
+            {"tag": "span", "action": "text"}
+        ],
+        "image": [
+            {"tag": "img", "class": "block", "action": "get", "attr": "src"}
+        ]
+    }
+}
