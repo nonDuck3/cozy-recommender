@@ -1,0 +1,9 @@
+transformer==5.4.0
+torch==2.11.0
+pandas==3.0.1
+pillow==12.1.1
+requests==2.33.0
+sentencepiece==0.2.1
+protobuf==7.34.1
+selenium==4.41.0
+beautifulsoup4==4.14.3
