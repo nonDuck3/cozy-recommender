@@ -1,0 +1,17 @@
+{
+    "container": {"tag": "a", "class": "product-link"},
+    "image_container": {"tag": "div", "class": "product-item__image double__image"},
+    "fields": {
+        "clothing": [
+            {"tag": "h3", "class": "product__grid__title", "action": "text"}
+        ],
+        "price": [
+            {"tag": "span", "class": "price"},
+            {"tag": "span", "class": "new-price", "action": "text"}
+        ],
+        "image": [
+            {"tag": "a", "class": "product-link"},
+            {"tag": "div", "class": "product-item__bg lazyloaded", "action": "get", "attr": "style"}
+        ]
+    }
+}
