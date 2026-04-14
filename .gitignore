@@ -54,12 +54,6 @@ Thumbs.db
 *.bak
 *.temp
 
-# Project Output
-output/
-results/
-*.csv
-*.xlsx
-
 # Testing
 .pytest_cache/
 .coverage
