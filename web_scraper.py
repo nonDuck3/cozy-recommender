@@ -59,7 +59,7 @@ class WebScraper:
             image_df (pd.DataFrame): empty Python dataframe to store image urls.
             description_df (pd.DataFrame): empty Python dataframe to store clothing names and prices.
         """
-        # run browser quicker in headless mode and ignore SSL warnings
+        
         browser_options = Options()
         browser_options.add_argument("--headless")
         browser_options.add_argument('--ignore-certificate-errors')
