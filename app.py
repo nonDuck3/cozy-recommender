@@ -5,8 +5,8 @@ file_name = "./data/embeddings/all_embeddings.pkl"
 siglip_model_path = "google/siglip-base-patch16-224"
 
 st.set_page_config(
-    page_title="COZY",
-    page_icon="👚"  
+    page_title="COZY · Personal Winter Apparel Recommender",
+    page_icon="👚"
 )
 
 st.markdown("""
