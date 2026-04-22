@@ -1,5 +1,7 @@
 # 🧥❄️ Winter Apparel Recommender System  
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://comfy-outfits-zoned-for-you.streamlit.app/)
+
 > **COZY (Comfy Outfits Zoned for You)** is a **content-based clothing recommender** that uses [SigLIP](https://huggingface.co/docs/transformers/model_doc/siglip) to jointly encode text and images into a shared embedding space. Users describe what they're looking for, set a price budget, and receive the top 10 most relevant clothing items — all in real time via a Streamlit app.
 
 ## 💡 Purpose
