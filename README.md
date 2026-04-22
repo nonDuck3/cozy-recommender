@@ -1,12 +1,16 @@
 # 🧥❄️ Winter Apparel Recommender System  
 
-> **COZY (Comfy Outfits Zoned for You)** [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://comfy-outfits-zoned-for-you.streamlit.app/) is a **content-based clothing recommender** that uses [SigLIP](https://huggingface.co/docs/transformers/model_doc/siglip) to jointly encode text and images into a shared embedding space. Users describe what they're looking for, set a price budget, and receive the top 10 most relevant clothing items — all in real time via a Streamlit app.
+> **COZY (Comfy Outfits Zoned for You)** to jointly encode text and images into a shared embedding space. Users describe what they're looking for, set a price budget, and receive the top 10 most relevant clothing items — all in real time via a Streamlit app.
 
 ## 💡 Purpose
 
 This project was developed to help my sister prepare for winter, as she currently has limited warm outerwear suitable for both **work** and **casual** settings. Instead of spending time browsing multiple retailer websites — each with inconsistent product naming, page layouts, and filtering tools, I built a single interface that searches across stores and returns the most relevant items based on a natural-language description of what she needs.
 
 Beyond solving a personal need, this project also served as a hands-on exploration of **multimodal representation learning**. It uses **SigLIP** — a vision-language model that embeds text and images into a shared latent space — to generate **dense vector embeddings** for both product listings and user queries. Recommendations are then ranked using **cosine similarity** over these embeddings, making it a clear example of **content-based filtering** without relying on user history, purchase data, or explicit ratings. Because the catalogue is built from **live-scraped listings**, the results stay aligned with what’s actually available and at what price, rather than depending on static datasets.
+
+## 🚀 Live Demo
+Experience the recommender system in action: 
+**[Launch COZY App →](https://comfy-outfits-zoned-for-you.streamlit.app/)**
 
 ## 📌 Table of Contents
 
