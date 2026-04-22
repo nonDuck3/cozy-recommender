@@ -8,7 +8,7 @@ from diagrams.aws.compute import Lambda
 from diagrams.onprem.compute import Server
 
 GRAPH_ATTR = {
-    "fontsize": "22",
+    "fontsize": "26",
     "fontname": "Sans-Serif bold",
     "bgcolor": "transparent",
     "pad": "0.3",
