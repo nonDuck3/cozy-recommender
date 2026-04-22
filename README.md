@@ -9,8 +9,8 @@ This project was developed to help my sister prepare for winter, as she currentl
 Beyond solving a personal need, this project also served as a hands-on exploration of **multimodal representation learning**. It uses **SigLIP** — a vision-language model that embeds text and images into a shared latent space — to generate **dense vector embeddings** for both product listings and user queries. Recommendations are then ranked using **cosine similarity** over these embeddings, making it a clear example of **content-based filtering** without relying on user history, purchase data, or explicit ratings. Because the catalogue is built from **live-scraped listings**, the results stay aligned with what’s actually available and at what price, rather than depending on static datasets.
 
 ## 🚀 Live Demo
-Experience the recommender system in action: 
-**[Launch COZY App →](https://comfy-outfits-zoned-for-you.streamlit.app/)**
+View the recommender system in action: 
+**[Experience COZY ✨](https://comfy-outfits-zoned-for-you.streamlit.app/)**
 
 ## 📌 Table of Contents
 
