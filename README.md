@@ -2,15 +2,11 @@
 
 > **COZY (Comfy Outfits Zoned for You)** is a **content-based clothing recommender** that uses [SigLIP](https://huggingface.co/docs/transformers/model_doc/siglip) to jointly encode text and images into a shared embedding space. Users describe what they're looking for, set a price budget, and receive the top 10 most relevant clothing items — all in real time via a Streamlit app.
 
----
-
 ## 💡 Purpose
 
-This project was developed to help my sibling prepare for winter, as she currently has limited warm outerwear suitable for both **work** and **casual** settings. Instead of spending time browsing multiple retailer websites — each with inconsistent product naming, page layouts, and filtering tools, I built a single interface that searches across stores and returns the most relevant items based on a natural-language description of what she needs.
+This project was developed to help my sister prepare for winter, as she currently has limited warm outerwear suitable for both **work** and **casual** settings. Instead of spending time browsing multiple retailer websites — each with inconsistent product naming, page layouts, and filtering tools, I built a single interface that searches across stores and returns the most relevant items based on a natural-language description of what she needs.
 
 Beyond solving a personal need, this project also served as a hands-on exploration of **multimodal representation learning**. It uses **SigLIP** — a vision-language model that embeds text and images into a shared latent space — to generate **dense vector embeddings** for both product listings and user queries. Recommendations are then ranked using **cosine similarity** over these embeddings, making it a clear example of **content-based filtering** without relying on user history, purchase data, or explicit ratings. Because the catalogue is built from **live-scraped listings**, the results stay aligned with what’s actually available and at what price, rather than depending on static datasets.
-
----
 
 ## 📌 Table of Contents
 
@@ -27,8 +23,6 @@ Beyond solving a personal need, this project also served as a hands-on explorati
   - [Running the App](#running-the-app)
 - [Usage](#usage)
 
----
-
 ## Overview
 
 This project is a **multimodal content-based recommender system** for winter clothing items (specifically **knitwear** such as **jumpers, sweaters, and sweatshirts**). Unlike collaborative filtering approaches, it requires **no user history** — recommendations are driven entirely by the semantic and visual similarity between a user's text query and the scraped product catalogue.
@@ -38,8 +32,6 @@ Key characteristics:
 - **No cold-start problem** — works immediately with newly scraped items.
 - **Scales dynamically** — as more products are scraped, the recommendation pool grows without retraining.
 - **Multimodal understanding** — captures both visual style (from product images) and semantic meaning (from text descriptions) using SigLIP.
-
----
 
 ## How It Works
 
@@ -79,8 +71,6 @@ This is the **online / real-time** stage that the end user interacts with.
 5. The **top 10 most similar items** are displayed in a dataframe on the UI.
 
 Each new query triggers a fresh encode + embed → similarity → filter → display cycle in real time.
-
----
 
 ## Tech Stack
 
@@ -123,8 +113,6 @@ Each new query triggers a fresh encode + embed → similarity → filter → dis
 └── README.md
 ```
 
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -137,8 +125,8 @@ Each new query triggers a fresh encode + embed → similarity → filter → dis
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/nonDuck3/cozy-recommender.git
+cd cozy-recommender
 
 # 2. Create and activate a virtual environment
 python -m venv venv
@@ -162,8 +150,6 @@ python main.py "https://www.uniqlo.com/au/en/women/knitwear" "uniqlo" "C:/Users/
 # Launch the Streamlit recommender
 streamlit run app.py
 ```
-
----
 
 ## Usage
 
