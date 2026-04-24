@@ -61,7 +61,8 @@ with st.form("recommendation_form", clear_on_submit=True):
                     "Price": st.column_config.NumberColumn(
                         "Price (in AUD)",
                         format="%.2f"
-                    )
+                    ),
+                    "Image Link": st.column_config.LinkColumn("Image URL")
                 }, 
                 hide_index=True
             )
